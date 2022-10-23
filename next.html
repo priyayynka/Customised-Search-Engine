@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Search Bar</title>
+    <link rel="stylesheet" href="next.css">
+</head>
+<body>
+    <a href="#" class="btn">Home</a>
+    <b href="#" class="btn1">About</b>
+    <div class="search">
+        <div class="icon"></div>
+        <div class="input">
+        <input type="text" placeholder="Search" id="mysearch">
+    </div>
+    <span class="'clear" onclick="document.getElementById('mysearch').value = ''"></span>
+    <script>
+        const icon = document.querySelector('.icon');
+        const search = document.querySelector('.search');
+        icon.onclick = function(){
+            search.classList.toggle('active')
+        }
+    </script>
+</body>
+ </html>
